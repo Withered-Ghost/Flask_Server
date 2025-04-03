@@ -20,7 +20,6 @@ def delete_task_id(task_id):
     tasks.remove(task)
     return jsonify({"tasks":tasks}),200
 
-
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
